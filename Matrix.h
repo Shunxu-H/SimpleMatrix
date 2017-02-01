@@ -15,9 +15,6 @@ public:
 	}
 
 	Matrix(const Matrix& m);
-	//float get(const int& rowPtr, const int& colPtr);
-	//void set(const int& rowPtr, const int& colPtr);
-
 
 	Matrix(const SpecialMatrix& type);
 	float** makeData(const int& _numOfCol, const int& _numOfRow);
@@ -30,6 +27,7 @@ public:
 	void makeTranslationMatrix(const float& x, const float& y);
 	void makeRotationMatrix(const float& alpha, const float& x, const float& y);
 	void makeScalingMatrix(const float& alpha_x, const float& alpha_y );
+	
 	Matrix operator*(const Matrix& rhs)const; 
 	inline float* operator[](const int& index){return data[index]; }
 	inline float* operator[](const int& index)const {return data[index]; }
