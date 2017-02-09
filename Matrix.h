@@ -24,10 +24,6 @@ public:
 	inline int getRowNum(){ return numOfRow; };
 	inline int getColNum(){ return numOfCol; };
 
-	void makeTranslationMatrix(const float& x, const float& y);
-	void makeRotationMatrix(const float& alpha, const float& x, const float& y);
-	void makeScalingMatrix(const float& alpha_x, const float& alpha_y );
-	
 	Matrix operator*(const Matrix& rhs)const; 
 	inline float* operator[](const int& index){return data[index]; }
 	inline float* operator[](const int& index)const {return data[index]; }

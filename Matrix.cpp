@@ -10,8 +10,6 @@ TO DO:
 #include "Matrix.h"
 
 
-
-
 Matrix::Matrix(const Matrix& m){
 	numOfRow = m.numOfRow;
 	numOfCol = m.numOfCol;
